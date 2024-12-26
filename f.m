@@ -1,4 +1,4 @@
-function dydt = f(t, y)
+function dydt = f(y)
 global n rho_p omega f k alpha u1 e1 d chi lambda mu chi_s lambda_s m diameter V0 lg p0 phi theta delta S l0 rho ZK
     dydt = zeros(6, 1);
     dydt(2) = (u1/e1 * (y(5)^n)) * (y(2) < ZK);
